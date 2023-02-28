@@ -11,6 +11,7 @@ from torch.utils.data import TensorDataset, DataLoader
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
+# example： channels=[[12,12,24,48,96,192,384],[12,12,24,48,96,192,384],[12,12,24,48,96,192,384]]
 
 class SAPJNet(nn.Module):
     def __init__(self, pool, patch, depth, channels):
